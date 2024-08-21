@@ -37,7 +37,7 @@ Example)
 ```
 kakao_talk:
   api_key: ef15xxxxx3ac00934e4d7e0ab41xxxxx
-  redirect_uri: https://xxxxx.duckdns.org
+  redirect_uri: http://xxxxx.duckdns.org:8123
   send_to_friends: True
   
 notify:
@@ -51,6 +51,10 @@ And type YOUR_HASSIO_URL/api/kakao_talk on the web browser such as Chrome, Firef
 You can see below screen then you can find the Login Redirection URI, 
 it should be input Login Redirection URI on the Kakao Development site.<br>
 ![Kakao_Login_Screen](https://user-images.githubusercontent.com/11463289/69050463-73cc2000-0a45-11ea-8445-734e60556bd1.png)
+Redirect URI Example)
+```
+http://xxxxx.duckdns.org:8123/api/kakao_talk
+```
 
 Login KakaoTalk service by clicking '카카오톡 로그인' button.<br>
 

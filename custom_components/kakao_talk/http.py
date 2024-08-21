@@ -72,7 +72,7 @@ class KakaoConfig:
 
         self._access_token = _res["access_token"]
         self._refresh_token = _res["refresh_token"]
-        self.save_refresh_token()
+        await self.save_refresh_token()
 
         return _res
 

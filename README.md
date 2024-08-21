@@ -63,7 +63,7 @@ To use notifications, please see the [getting started with automation page][hass
 ```yaml
 ...
 action:
-  service: notify.NOTIFIER_NAME
+  service: notify.kakao_talk
   data:
     title: Send a message
     message: That''s an example that _sends_ a formatted message with a custom inline keyboard.
@@ -84,7 +84,7 @@ action:
 ```yaml
 ...
 action:
-  service: notify.NOTIFIER_NAME
+  service: notify.kakao_talk
   data:
     title: Send an images
     message: That''s an example that sends an image.

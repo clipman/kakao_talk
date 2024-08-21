@@ -37,7 +37,7 @@ Example)
 ```
 kakao_talk:
   api_key: ef15xxxxx3ac00934e4d7e0ab41xxxxx
-  redirect_uri: http://xxxxx.duckdns.org:8123
+  redirect_uri: https://xxxxx.duckdns.org
   send_to_friends: True
   
 notify:

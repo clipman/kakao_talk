@@ -7,13 +7,15 @@ The **kakao_talk** platform uses KakaoTalk to deliver notifications from [Home A
 
 ## Installation
 
-* All files of this repository should be placed on `custom_components\kakaotalk` inside of `~/.homeassistant` or `~/config` folder. 
-
-       $ cd ~/.homeassistant
-       $ mkdir custom_components
-       $ cd custom_components
-       $ git clone https://github.com/musk95/kakao_talk.git kakao_talk
-       
+HACS
+* Custom repositories
+```
+  Repository:
+    https://github.com/clipman/kakao_talk
+  Category:
+    Integration
+```
+* Kakao Talk Download
 * Restart the Home Assistant service
 
 ## Setup

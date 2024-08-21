@@ -140,8 +140,8 @@ class KakaoConfig:
         async with aiohttp.ClientSession() as session:
             try:
                 async with session.post(url,data=payload, headers=headers) as r:
-                    reponse = await r.text(encoding='utf-8')
-                    access_token = json.loads(reponse)
+                    response = await r.text(encoding='utf-8')
+                    access_token = json.loads(response)
                     return access_token
             except aiohttp.ClientError:
                 pass
@@ -158,8 +158,8 @@ class KakaoConfig:
         async with aiohttp.ClientSession() as session:
             try:
                 async with session.post(url,data=payload, headers=headers) as r:
-                    reponse = await r.text(encoding='utf-8')
-                    access_token = json.loads(reponse)
+                    response = await r.text(encoding='utf-8')
+                    access_token = json.loads(response)
                     return access_token
             except aiohttp.ClientError:
                 pass
@@ -172,9 +172,9 @@ class KakaoConfig:
         async with aiohttp.ClientSession() as session:
             try:
                 async with session.get(url, headers=headers) as r:
-                    reponse = await r.text(encoding='utf-8')
-                    _LOGGER.debug("KakaoTalkView [Friends] %s", reponse)
-                    _ret = json.loads(reponse)
+                    response = await r.text(encoding='utf-8')
+                    _LOGGER.debug("KakaoTalkView [Friends] %s", response)
+                    _ret = json.loads(response)
             except aiohttp.ClientError:
                 pass
         if 'error' in _ret:
@@ -302,8 +302,8 @@ async def sendText(accessToken, message, url) :
     async with aiohttp.ClientSession() as session:
         try:
             async with session.post(url,data=payload, headers=headers) as r:
-                reponse = await r.text(encoding='utf-8')
-                return json.loads(reponse)
+                response = await r.text(encoding='utf-8')
+                return json.loads(response)
         except aiohttp.ClientError:
             pass
 
@@ -333,8 +333,8 @@ async def sendDefaultTemplate(accessToken, title, message, image_url, url):
     async with aiohttp.ClientSession() as session:
         try:
             async with session.post(url,data=payload, headers=headers) as r:
-                reponse = await r.text(encoding='utf-8')
-                return json.loads(reponse)
+                response = await r.text(encoding='utf-8')
+                return json.loads(response)
         except aiohttp.ClientError:
             pass
 
@@ -364,8 +364,8 @@ async def sendTextToFriends(accessToken, message, url, friends) :
     async with aiohttp.ClientSession() as session:
         try:
             async with session.post(url,data=payload, headers=headers) as r:
-                reponse = await r.text(encoding='utf-8')
-                return json.loads(reponse)
+                response = await r.text(encoding='utf-8')
+                return json.loads(response)
         except aiohttp.ClientError:
             pass
 
@@ -400,7 +400,7 @@ async def sendDefaultTemplateToFriends(accessToken, title, message, image_url, u
     async with aiohttp.ClientSession() as session:
         try:
             async with session.post(url,data=payload, headers=headers) as r:
-                reponse = await r.text(encoding='utf-8')
-                return json.loads(reponse)
+                response = await r.text(encoding='utf-8')
+                return json.loads(response)
         except aiohttp.ClientError:
             pass

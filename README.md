@@ -16,7 +16,6 @@ HACS
     Integration
 ```
 * Kakao Talk Download
-* Restart the Home Assistant
 
 ## Setup
 

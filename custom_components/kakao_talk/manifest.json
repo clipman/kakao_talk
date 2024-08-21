@@ -1,7 +1,7 @@
 {
   "domain": "kakao_talk",
   "name": "Kakao Talk",
-  "version": "2024.08.21",
+  "version": "2024.08.22",
   "documentation": "https://github.com/clipman/kakao_talk",
   "requirements": [],
   "dependencies": ["http"],

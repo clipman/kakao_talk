@@ -31,12 +31,22 @@ kakao_talk:
   send_to_friends: True
   
 notify:
-  - name: kakaotalk_noti
-    platform: kakao_talk
-
+  - platform: kakao_talk
+    name: kakao_talk
+```
+Example)
+```
+kakao_talk:
+  api_key: ef15xxxxx3ac00934e4d7e0ab41xxxxx
+  redirect_uri: http://xxxxx.duckdns.org:8123
+  send_to_friends: True
+  
+notify:
+  - platform: kakao_talk
+    name: kakao_talk
 ```
 
-Restart the Home Assistant service.
+Restart the Home Assistant.
 
 And type YOUR_HASSIO_URL/api/kakao_talk on the web browser such as Chrome, Firefox...<br>
 You can see below screen then you can find the Login Redirection URI, 

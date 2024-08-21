@@ -55,6 +55,7 @@ Redirect URI Example)
 ```
 http://xxxxx.duckdns.org:8123/api/kakao_talk
 ```
+https://developers.kakao.com/
 <br><br>
 ![Kakao_Login_Screen](https://user-images.githubusercontent.com/11463289/69050463-73cc2000-0a45-11ea-8445-734e60556bd1.png)
 

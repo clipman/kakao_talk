@@ -50,8 +50,10 @@ Restart the Home Assistant.
 And type YOUR_HASSIO_URL/api/kakao_talk on the web browser such as Chrome, Firefox...<br>
 You can see below screen then you can find the Login Redirection URI, 
 it should be input Login Redirection URI on the Kakao Development site.<br>
+```
 Redirect URI Example)<br>
 http://xxxxx.duckdns.org:8123/api/kakao_talk<br>
+```
 <br><br>
 ![Kakao_Login_Screen](https://user-images.githubusercontent.com/11463289/69050463-73cc2000-0a45-11ea-8445-734e60556bd1.png)
 

@@ -1,0 +1,9 @@
+{
+  "domain": "kakao_talk",
+  "name": "Kakao Talk",
+  "version": "2024.08.21",
+  "documentation": "https://github.com/clipman/kakao_talk",
+  "requirements": [],
+  "dependencies": ["http"],
+  "codeowners": ["@nimusis", "@clipman"]
+}
